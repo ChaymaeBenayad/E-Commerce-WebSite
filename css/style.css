@@ -1,0 +1,516 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+img{
+	width: 100%;
+}
+/*Header*/
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:0 6rem;
+	height: 70px;
+}
+.logo{
+	width: 180px;
+	height: 120px;
+	padding-right: 10px;
+	 
+}
+.search-box{
+	background-color:#E8E8E8;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+}
+.search-btn{
+	color: goldenrod;
+	float: right;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color:#E8E8E8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border: none;
+}
+.search-text{
+	border: none;
+	background:none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: black;
+	font-size: 16px;
+	line-height: 20px;
+	width: 320px;
+	font-weight: bold;
+}
+.navig{
+	list-style: none;
+}
+.navig li{
+	display: inline-block;
+	padding: 0 6px;
+}
+.navig li a{
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+.navig li a:hover{
+	border: 2px solid goldenrod;
+	border-radius: 20px;
+	padding: 8px;
+	color: goldenrod;
+}
+.number{
+	border: 2px solid goldenrod;
+	border-radius: 30px;
+	margin: 0 5px;
+	padding:6px 8px;
+	padding-right: 12px;
+	color: black;
+	text-align: center;
+}
+#main-nav a {
+  color: #f6f7f8;
+  background: #383838;
+  height: 50px;
+  font-family: 'Catamaran',sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.4s;
+}
+#main-nav a:hover {
+  background: goldenrod;
+  color: black;
+}
+#main-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+#main-nav li {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#main-nav li:hover .submenu > li {
+  display: block;
+  flex-direction: column;
+  top: 0px;
+}
+
+.submenu li {
+  display: none;
+  position: absolute;
+  top: 0px;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
+    padding: 150px 0;
+}
+.parallax-window p{
+	z-index: 2;
+	position: relative;
+	color: black;
+	font-family:'Catamaran',sans-serif;
+	font-weight: bold;
+	font-size: 3rem;
+	text-align: center;
+	letter-spacing: 9px;
+	}
+ .title{
+ 	font-family:'Catamaran',sans-serif;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px; 
+	font-size: 1.2rem;
+	margin-bottom: 30px;
+ }
+ .title .small-underline{
+	display: inline-block;
+	position: relative;
+}	
+.title .small-underline::after{
+content: "";
+height: 4px;
+width: 50%;
+background-color: goldenrod;
+position: absolute;
+left: calc(50% - 25%);
+bottom: 0;
+}
+.container{
+	margin:auto;
+	padding:1rem 2rem;
+	text-align: center;
+}
+.prod_cat{
+	list-style: none;
+
+}
+.prod_cat li{
+	display: inline-block;
+    /*border:3px solid goldenrod;*/
+	 padding: 35px 20px ;
+	 width: 400px;
+}
+.head{
+	text-align: center;
+	text-decoration: underline;
+	padding-bottom: 20px;
+	}
+
+.prod_cat img{
+	width: 250px;
+	height: 250px;
+	border: 1px solid black;
+	box-shadow: 5px 5px 1px 1px rgba(0,0,0,0.8);
+	margin-bottom:20px;
+}
+.btn{
+   font-size: 16px;
+   background-color: goldenrod;
+   border:5px solid black; 
+   border-radius: 25px;
+   padding:5px;
+}
+.btn a{
+  color: black;
+  text-align: center;
+}
+
+.btn:hover{
+
+ background-color: #fedc56;
+ border-color: black;
+ cursor: pointer;
+}
+.section1{
+	margin-top: 30px;
+}
+.cont{
+	max-width: 1100px;
+    margin:auto;
+	padding: 0 10rem;
+	min-height: 500px;
+}
+.section1 .cont{
+	display: grid;
+	grid-template-columns:repeat(2,1fr);
+	align-items: center;
+	justify-content: center;
+}
+.img_prod{
+	text-align: center;
+}
+.img_prod .imgs{
+    width:400px;
+	height:400px;
+}
+.division{
+	text-align: center;
+}
+.section2{
+	text-align: center;
+	margin: 30px 0;
+}
+.conteneur{
+	margin:auto;
+	text-align: center;
+	background-color: red;
+}
+.related_prod_cat li{
+	list-style: none;
+	display: inline-block;
+	 padding: 15px 10px ;
+	 width: 400px;
+	 text-align: center;
+}
+.related_prod_cat img{
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+	box-shadow: 5px 5px 1px 1px rgba(0,0,0,0.8);
+}
+.related_prod_cat p{
+	color: #201513;
+	padding-top:5px;
+}
+.related_prod_cat li:hover{
+	border: 2px solid goldenrod;
+}
+.cart{
+	width: 100%;
+	padding: 5%;
+	min-height: 350px;
+	background-color: #DCDCDC;
+}
+.cart table{
+	width: 100%;
+	text-align: center;
+
+}
+.cart th{
+	background-color: goldenrod;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+}	
+.cart td{
+	background-color:white;
+	font-size: 13px;
+}	
+.cart img{
+	width: 60px;
+	height: 50px;
+}
+.cart .quantity{
+	width: 10%;
+	text-align: center;
+}
+.cart .save{
+   font-size: 13px;
+   border:2px solid black;
+   color: #f6f7f8;
+   background: #383838; 
+}
+.cart .save:hover{
+  background: goldenrod;
+  color: black;
+}
+.cart a{
+	color: black;
+}
+.cart .total td{
+	background-color: #DCDCDC;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 60px;
+}
+.cart .total .sum{
+  color: #b68440;
+}
+.cart .boutons td{
+	background-color: #DCDCDC;
+	line-height: 60px;
+}
+.boutons .BTN{
+	font-size: 16px;
+	border:2px solid black;
+    padding: 10px;
+    background: #383838;
+}
+.boutons .BTN a{
+	color:  #f6f7f8;
+}	
+.boutons .BTN:hover{
+  background: goldenrod;
+  color: black;
+}
+.cart .panVide{
+	text-align: center;
+}
+.panVide h2{
+	padding: 50px 0;
+}
+.panVide i{
+	font-size: 100px;
+}
+.section3{
+	/*background-color: goldenrod;*/
+}	
+.valid{
+	max-width: 1100px;
+    margin:auto;
+	padding: 0 4rem;
+	min-height: 600px;
+}
+.section3 .valid {
+    display: grid;
+	grid-template-columns:repeat(2,1fr);
+	grid-gap: 100px;
+	align-items: center;
+	justify-content: center;
+}
+.login{
+	width: 320px;
+	min-height: 500px;
+	font-weight: bold;
+	padding: 30px 30px;
+}
+.login h1{
+    margin: 0;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 22px;
+    color: goldenrod;
+}
+.login input
+{
+	 width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+.login button
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: goldenrod;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 5px;
+}
+.login button:hover
+{
+    cursor: pointer;
+   color: #f6f7f8;
+  background: #383838;
+}
+.register{
+	padding: 30px 30px;
+	width: 320px;
+	max-height: 500px;
+	color: #fff;
+	font-weight: bold;
+}
+.register h1{
+    margin: 0;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 22px;
+    color: goldenrod;
+}
+.register input
+{
+	 width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+.register button
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: goldenrod;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 8px;
+}
+.register button:hover
+{
+    cursor: pointer;
+    color: #f6f7f8;
+  background: #383838;
+}
+.text-danger{
+	color: red;
+    text-align: center;
+}
+.content{
+	width: 100%;
+	padding: 10%;
+	min-height: 350px;
+}
+.content h2{
+    text-align:center;
+    margin-bottom: 20px;
+  }
+ .content table{
+  width: 100%; 
+  text-align: center;
+  border:2px solid black;
+  margin-bottom: 30px;
+}
+.content th{
+  background-color: goldenrod;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  padding:20px 0;
+} 
+.content td{
+  font-size: 12px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+	/*Footer*/
+footer{
+    background-color: #383838;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 40px;
+	align-items: center;
+	justify-content: center;
+	height: 180px;
+}
+.foot{
+	text-align: center;
+}
+.foot p a{
+	color: white;
+	line-height: 30px;
+}
+.foot p a:hover{
+	color: black;
+}
+footer h4{
+	color: goldenrod;
+	margin-bottom: 20px;
+}
+footer p{
+	color: white;
+	line-height: 30px;
+}
+.icons li{
+	display: inline;
+	cursor: pointer;
+}
+.icons li a i{
+	color: white;
+	margin-top: 10px;
+	margin-right: 5px;
+}
+.icons li a i:hover{
+	color:black;
+}
+
+

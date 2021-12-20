@@ -1,0 +1,20 @@
+    
+    <?php
+     session_start();
+      include'functionsUser.php'; 
+      include'header.php'; 
+	    include'menu.php'; 
+        if(isset($_GET['cat_id'])){
+             echo"<div class='container'>";
+            echo produits_categories(); 
+            echo "</div>"; 
+        }  
+      include'footer.php'; 
+      echo ajouter_panier();   
+    ?> 
+    </body>
+    </html>
+
+
+
+
